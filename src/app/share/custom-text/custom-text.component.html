@@ -1,0 +1,9 @@
+<div class="relative inline-block" [ngClass]="class" *ngIf="!header">
+    <p class="inherit z-10">{{content}}</p>
+
+    <div *ngIf="isUnderlined" class="absolute z-0 h-3 bg-primary right-0 left-0 -translate-y-[150%]"></div>
+</div>
+
+<ng-container [ngClass]="class" *ngIf="type == 'with-header' || header">
+    <span class="font-bold">{{header}}</span><span>{{content}}</span>
+</ng-container>

@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Tisa Sans Pro', sans-serif;
+                                                
+}
+
+.container{
+    @apply w-3/4 mx-auto;
+}
+
+.sub-container{
+    @apply w-3/4 mx-auto px-7;
+}
+
+a{
+    @apply font-bold underline text-blue-600;
+}
+
